@@ -8,7 +8,7 @@ pipeline{
  }
  stage('Execute Ansible'){
   steps{
-     ansiblePlaybook credentialsId: 'bishwa_id', disableHostKeyChecking: true, inventory: 'dhost.inv', playbook: 'apache.yml'  
+     ansiblePlaybook credentialsId: 'auser', disableHostKeyChecking: true, inventory: 'dhost.inv', playbook: 'apache.yml'  
       }
     }
 }
